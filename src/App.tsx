@@ -6,13 +6,13 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div
+    <main
       id="App"
-      className="bg-white-magnolia grid place-content-center
-       place-items-center min-h-screen "
+      className=" grid place-content-center
+       place-items-center min-h-screen bg-white-w"
     >
       <div
-        className="flex flex-col sm:flex-row bg-white-w
+        className="flex flex-col sm:flex-row bg-white-magnolia
         justify-center items-center sm:items-start h-full
        gap-5 shadow-xl  p-0 sm:p-4 rounded-lg"
       >
@@ -25,7 +25,7 @@ function App() {
           setCurrentIndex={setCurrentIndex}
         />
       </div>
-    </div>
+    </main>
   );
 }
 
