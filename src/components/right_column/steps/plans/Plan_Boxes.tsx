@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { IPlan_Box, Plan, SummaryProps } from "../../../../types/typings";
 import {
   Advanced_Plan,
@@ -7,7 +6,6 @@ import {
 } from "../../../svg's/plans/Icons_Plans";
 
 const Plan_Boxes = ({ setSummary, summary }: SummaryProps) => {
-  const [activeIndex, setActiveIndex] = useState<number | undefined>(undefined);
   const plans: IPlan_Box[] = [
     { title: "Arcade", price: 9, icon: Arcade_Plan },
     { title: "Advanced", price: 12, icon: Advanced_Plan },
@@ -15,11 +13,10 @@ const Plan_Boxes = ({ setSummary, summary }: SummaryProps) => {
   ];
   return (
     <div className="grid grid-cols-none grid-rows-3 sm:grid-cols-3 sm:grid-rows-none gap-5  my-4">
-      {plans.map((plan, index) => {
+      {plans.map((plan) => {
         return (
           <div
             onClick={() => {
-              setActiveIndex(index);
               setSummary((prev) => ({
                 ...prev,
                 plan: plan.title.toLowerCase() as Plan,
@@ -29,9 +26,9 @@ const Plan_Boxes = ({ setSummary, summary }: SummaryProps) => {
             className={`flex sm:flex-col justify-start sm:justify-between 
               hover:cursor-pointer
             border-2  hover:border-blue-pastel ${
-              activeIndex === index ||
-              (summary.plan === plan.title.toLowerCase() &&
-                "border-blue-pastel")
+              summary?.plan === plan.title.toLowerCase()
+                ? "border-blue-pastel"
+                : ""
             } rounded-lg shadow-lg p-3 gap-10`}
           >
             <span>{plan.icon}</span>

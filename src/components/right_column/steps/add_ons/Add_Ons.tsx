@@ -2,6 +2,7 @@ import { Services, StepProps } from "../../../../types/typings";
 import Button from "../../Button";
 
 export default function Add_Ons({
+  currentIndex,
   setCurrentIndex,
   setSummary,
   summary,
@@ -85,7 +86,11 @@ export default function Add_Ons({
         })}
       </div>
 
-      <Button setCurrentIndex={setCurrentIndex} />
+      <Button
+        setCurrentIndex={setCurrentIndex}
+        currentIndex={currentIndex}
+        summary={summary}
+      />
     </>
   );
 }

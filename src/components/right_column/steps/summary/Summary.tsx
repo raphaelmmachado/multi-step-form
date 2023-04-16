@@ -3,6 +3,7 @@ import Button from "../../Button";
 import plan_price from "./plan_price";
 export default function Summary({
   setCurrentIndex,
+  currentIndex,
   setSummary,
   summary,
 }: StepProps) {
@@ -19,12 +20,14 @@ export default function Summary({
         </p>
       </header>{" "}
       <div className="flex flex-col gap-4">
-        <PlanRow
-          plan={summary.plan}
-          price={plan_price[summary.plan]}
-          yearly={summary.yearly}
-          setSummary={setSummary}
-        />
+        {summary.plan && (
+          <PlanRow
+            plan={summary?.plan}
+            price={plan_price[summary?.plan]}
+            yearly={summary.yearly}
+            setSummary={setSummary}
+          />
+        )}
         {summary.online_service && (
           <ServiceRow
             title="Online service"
@@ -50,6 +53,7 @@ export default function Summary({
       </div>
       <Button
         title="Confirm"
+        currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}
         summary={summary}
       />
@@ -122,10 +126,10 @@ const Total = ({ summary }: TotalProps) => {
         plan_price = 9;
         break;
       case "advanced":
-        plan_price = 10;
+        plan_price = 12;
         break;
       case "pro":
-        plan_price = 12;
+        plan_price = 15;
         break;
       default:
         plan_price = 0;
