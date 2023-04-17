@@ -92,7 +92,7 @@ const formik = useFormik({
 
 ### Continued development
 
-I still don't feel comfortable with regex.
+I still don't feel confortable with regex.
 
 ### Useful resources
 
