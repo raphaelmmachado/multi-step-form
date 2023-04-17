@@ -101,5 +101,5 @@ I still don't feel confortable with regex.
 ## Author
 
 - Website - [Raphael Machado](https://raphaelmmachado.vercel.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/rm0909)
-- Twitter - [@yourusername](https://www.twitter.com/RaphaelmDev)
+- Frontend Mentor - [@rm0909](https://www.frontendmentor.io/profile/rm0909)
+- Twitter - [@raphaelmdev](https://wwwraphaelmdev.twitter.com/RaphaelmDev)
