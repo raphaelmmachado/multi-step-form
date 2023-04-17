@@ -25,6 +25,9 @@ export interface PlanPrice {
   advanced: number;
   pro: number;
 }
+interface IPlan {
+  arcade: { title: arcade };
+}
 export type Plan = "arcade" | "advanced" | "pro";
 export type Services =
   | "online_service"
@@ -35,13 +38,4 @@ interface IPlan_Box {
   title: string;
   price: number;
   icon: JSX.Element;
-}
-interface PlanChoices {
-  type: "arcade" | "advanced" | "pro" | undefined;
-  yearly: boolean;
-}
-
-interface IPlans {
-  planChoices: PlanChoices;
-  setPlanChoices: React.Dispatch<React.SetStateAction<PlanChoices>>;
 }

@@ -14,7 +14,6 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -38,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/raphaelmmachado/multi-step-form)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/multi-step-form-w-react-typescript-tailwind-formik-and-yup-76r0hHo3l_)
 - Live Site URL: [netlify](https://multi-step-form-rm.netlify.app)
 
 ## My process

@@ -25,10 +25,10 @@ const Plan_Boxes = ({ setSummary, summary }: SummaryProps) => {
             key={plan.title}
             className={`flex sm:flex-col justify-start sm:justify-between 
               hover:cursor-pointer
-            border-2  hover:border-blue-pastel ${
+            border-2   ${
               summary?.plan === plan.title.toLowerCase()
-                ? "border-blue-pastel"
-                : ""
+                ? "border-blue-purplish "
+                : "hover:border-blue-pastel"
             } rounded-lg shadow-lg p-3 gap-10`}
           >
             <span>{plan.icon}</span>

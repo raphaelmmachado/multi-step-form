@@ -107,7 +107,7 @@ interface ServiceRow {
 const ServiceRow = ({ title, price, yearly }: ServiceRow) => {
   return (
     <div className="flex justify-between">
-      <span className="font-bold text-gray-cool">{title}</span>
+      <span className="font-medium text-blue-marine">{title}</span>
       <span className="text-blue-marine">
         {yearly ? `+$${price * 10}/yr` : `+$${price}/mo`}
       </span>
@@ -152,7 +152,7 @@ const Total = ({ summary }: TotalProps) => {
   return (
     <div className="flex items-center justify-between my-8 border-t-2 border-t-gray-cool py-5">
       {" "}
-      <span className="font-bold text-gray-cool text-lg">
+      <span className="font-medium text-blue-marine text-lg">
         {" "}
         Total {summary.yearly ? "(per Year)" : "(per Month)"}
       </span>
