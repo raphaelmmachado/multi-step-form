@@ -102,4 +102,4 @@ I still don't feel confortable with regex.
 
 - Website - [Raphael Machado](https://raphaelmmachado.vercel.app/)
 - Frontend Mentor - [@rm0909](https://www.frontendmentor.io/profile/rm0909)
-- Twitter - [@raphaelmdev](https://wwwraphaelmdev.twitter.com/RaphaelmDev)
+- Twitter - [@raphaelmdev](https://www.twitter.com/RaphaelmDev)
